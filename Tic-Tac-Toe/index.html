@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tic-Tac-Toe</h1>
+            <p class="credit">Build by Somesh</p>
+        </header>
+        <div id="auth-container" class="auth-container">
+            <div id="login-section">
+                <h2>Login to Play</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="text" id="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Login</button>
+                </form>
+                <div class="auth-toggle">
+                    <p>Don't have an account? <button id="show-register" class="btn-link">Register</button></p>
+                </div>
+            </div>
+
+            <div id="register-section" class="hidden">
+                <h2>Create Account</h2>
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="reg-username">Username:</label>
+                        <input type="text" id="reg-username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="reg-password">Password:</label>
+                        <input type="password" id="reg-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" required>
+                    </div>
+                    <button type="submit" class="btn-primary">Register</button>
+                </form>
+                <div class="auth-toggle">
+                    <p>Already have an account? <button id="show-login" class="btn-link">Login</button></p>
+                </div>
+            </div>
+            <p id="auth-message" class="message"></p>
+        </div>
+        <div id="game-container" class="game-container hidden">
+            <div class="user-info">
+                <p class="welcome-text">Welcome, <span id="current-user"></span>!</p>
+                <button id="logout-btn" class="btn-secondary">Logout</button>
+            </div>
+            
+            <div class="game-mode">
+                <h3>Select Game Mode</h3>
+                <div class="mode-buttons">
+                    <button id="single-player-btn" class="btn-mode">Me vs AI</button>
+                    <button id="multiplayer-btn" class="btn-mode">Me vs Friend</button>
+                </div>
+            </div>
+
+            <div id="game-board" class="game-board hidden">
+                <div class="game-info">
+                    <p class="current-player">Current Player: <span id="current-player">X</span></p>
+                    <p class="game-mode-text">Game Mode: <span id="game-mode-display"></span></p>
+                    <p id="player-info" class="player-info"></p>
+                </div>
+                
+                <div class="score-board">
+                    <div class="score-item">
+                        <div id="player-x-label" class="score-label">You (X)</div>
+                        <div class="score-value" id="score-x">0</div>
+                    </div>
+                    <div class="score-item">
+                        <div class="score-label">Draws</div>
+                        <div class="score-value" id="score-draw">0</div>
+                    </div>
+                    <div class="score-item">
+                        <div id="player-o-label" class="score-label">AI (O)</div>
+                        <div class="score-value" id="score-o">0</div>
+                    </div>
+                </div>
+                
+                <div class="board-container">
+                    <div class="board">
+                        <div class="cell" data-index="0"></div>
+                        <div class="cell" data-index="1"></div>
+                        <div class="cell" data-index="2"></div>
+                        <div class="cell" data-index="3"></div>
+                        <div class="cell" data-index="4"></div>
+                        <div class="cell" data-index="5"></div>
+                        <div class="cell" data-index="6"></div>
+                        <div class="cell" data-index="7"></div>
+                        <div class="cell" data-index="8"></div>
+                    </div>
+                </div>
+
+                <div class="game-controls">
+                    <button id="reset-btn" class="btn-control">Reset Game</button>
+                    <button id="back-btn" class="btn-control">Back to Menu</button>
+                </div>
+                <div id="game-message" class="message"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
