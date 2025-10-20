@@ -53,4 +53,6 @@ Built by Somesh
 
 ---
 
-Enjoy playing Tic-Tac-Toe!
+Enjoy playing the Tic-Tic-Toe Game!
+
+##BY SOMESHWAR_AU
