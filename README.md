@@ -13,7 +13,7 @@ A responsive and interactive Tic-Tac-Toe game built with HTML, CSS, and JavaScri
 
 ## Play Now
 
-[Play Tic-Tac-Toe Game](https://someshwar-prox.github.io/tic-tac-toe-game)
+[Play Tic-Tac-Toe Game](https://someshwar-prox.github.io/tic-tac-toe-game/Tic-Tac-Toe)
 
 ## How to Play
 
